@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles/slick.css" />
+    <link rel="stylesheet" type="text/css" href="styles/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="styles/animate.css">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <title>Кафе "Блок питания"</title>
+    
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo"><img src="images/logo.png" alt="обеденный стол"></a>
+            <ul class="menu">
+                <li><a class="menu-item" href="index.html">Главная</a></li>
+                <li><a class="menu-item" href="news-page.html">Новости</a></li>
+                <li><a class="menu-item" href="menu-page.html">Меню</a></li>
+                <li><a class="menu-item" href="gallery-page.html">Галерея</a></li>
+                <li><a class="menu-item" href="review-page.html">Отзывы</a></li>
+                <li><a class="active-nav menu-item" href="kontact-page.html">Контакты</a></li>
+            </ul>
+            <div class="feedback"><a class="tel" href="tel:+375172901152">8 (017) 290 11 52</a><br>
+                <a class="tel" href="tel:+375296962518">8 (029) 696 25 18</a></div>
+            <div class="burger-button">
+                <div class="burger-div"></div>
+                <div class="burger-div"></div>
+                <div class="burger-div"></div>
+            </div>
+        </div>
+    </header>
+    <!--хедер-->
+    <div class="wrapper wrapper-сontaсts">
+
+        <div class="main-title with-line">Мы находимся:</div>
+        <div class="address">
+            <img src="images/caption.jpg" alt="наше кафе">
+            <div class="address-text">
+                <p><span>г. Минск,</span> <span>ул. Ольшевского,</span> <span>д. 22</span></p>
+                <p>Наши телефоны:</p>
+                <p>8 (01<span class="no-tel"></span>7) 290 11 52</p>
+                <p>8 (029) 696 23 18</p>
+                <a class="telephone all-button hover-button review-button" href="tel:+375296962518">Позвонить</a>
+            </div>
+
+        </div>
+
+        <div class="reserv par-indent">
+            <div class="main-title with-line">Забронировать столик</div>
+            <form id="reserv-form">
+                <div class="form-group">
+                    <label class="title_line" for="name">Имя:</label>
+                    <div class="field line">
+                        <span class="icon icon-user"></span>
+                        <input id="name" name="name" type="text" placeholder="Представьтесь">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="title_line" for="phone">
+                        Телефон:
+                    </label>
+                    <div class="field line">
+                        <span class="icon icon-mobile"></span>
+                        <input id="phone" name="phone" type="tel" pattern="8[0-9]{10}"
+                            placeholder="Введите номер телефона">
+                    </div>
+                </div>
+                <div class="form-group short-input">
+                    <label class="title_line" for="date">
+                        Дата и время:
+                    </label>
+                    <div class="field line">
+                        <span class="icon icon-calendar"></span>
+                        <input id="date" name="date" type="datetime-local">
+                    </div>
+                </div>
+
+                <div class="form-group short-input">
+                    <label class="title_line" for="guests">
+                        Количество гостей:
+                    </label>
+                    <div class="field line">
+                        <span class="icon icon-user-plus"></span>
+                        <input id="guests" name="guests" type="text">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form_message" for="message">Пожелание к брони:</label>
+                    <div class="field">
+                        <span class="icon icon-pencil"></span>
+                        <textarea id="message" name="message"></textarea>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="sbutton"></label>
+                    <div class="single_button">
+                        <button class="all-button hover-button" id="sbutton" name="sbutton">Забронировать</button>
+                    </div>
+                </div>
+            </form>
+
+
+
+            <div class="main-title par-indent with-line">Мы на карте</div>
+            <script type="text/javascript" charset="utf-8" async
+                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9c24a42a75054c59231845117769a46d1a0e9880a5ef56a5fb0788f0cd3d3763&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+
+        </div>
+    </div>
+    <!--футер-->
+    <footer>
+        <div class="footer-container">
+
+            <div class="footer-info">
+                <p class="footer-par info-title">Адрес:</p>
+                <p class="footer-par info-text"><span>г. Минск</span> <span>ул. Ольшевского</span> <span>д. 22</span>
+                </p>
+            </div>
+            <div class="footer-info footer-log"><img class="footer-logo" src="images/logo.png" alt="logo"></div>
+            <div class="footer-info">
+                <p class="footer-par info-title">Режим работы:</p>
+                <p class="footer-par info-text"><span>вс. - чт.:</span> <span>10.00 - 23.00</span></p>
+                <p class="footer-par info-text"><span>пт., сб.:</span> <span>10.00 - 02.00</span></p>
+            </div>
+
+        </div>
+
+        <div class="footer-feedback">
+            <div class="network"><a href="#" title="связаться с нами в Вконтакте"><span class="icon-vk"></span></a>
+            </div>
+            <div class="network"><a href="#" title="связаться с нами в Telegram"><span class="icon-telegram"></span></a>
+            </div>
+            <div class="network"><a href="#" title="связаться с нами в Viber"><span class="icon-whatsapp"></span></a>
+            </div>
+        </div>
+
+    </footer>
+    <a href="#" class="to-top"></a>
+
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/slick.min.js"></script>
+    <script src="scripts/wow.min.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
